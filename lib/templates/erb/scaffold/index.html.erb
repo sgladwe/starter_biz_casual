@@ -1,0 +1,28 @@
+<h1><%= plural_table_name.titleize %> <%%= link_to 'New <%= human_name %>', new_<%= singular_table_name %>_path, class: "btn btn-default btn-sm", style: "margin-bottom: 10px" %></h1>
+
+
+
+<%% @<%= plural_table_name %>.each do |<%= singular_table_name %>| %>
+		<h3>Big Field Goes Here - Title, etc.
+	     <%%= link_to 'Show', <%= singular_table_name %>,  class: "btn btn-default btn-sm", style: "margin-bottom: 10px" %>
+	     <%%= link_to 'Edit', edit_<%= singular_table_name %>_path(<%= singular_table_name %>),  class: "btn btn-default btn-sm", style: "margin-bottom: 10px" %>
+	     <%%= link_to 'Destroy', <%= singular_table_name %>, method: :delete, data: { confirm: 'Are you sure?' },  class: "btn btn-default btn-sm", style: "margin-bottom: 10px" %>
+			 <br>
+       <% attributes.reject(&:password_digest?).each do |attribute| -%>
+         <small><%%= <%= singular_table_name %>.<%= attribute.name %> %></small><br>
+       <% end -%>
+	  </h3>
+		<br>
+		<p>
+			 simple_format "textarea fields here
+			paragraph - textarea fields here
+			paragraph - textarea fields here"	 
+		</p>
+		
+		<hr>
+		
+<%% end %>
+  
+<br>
+
+

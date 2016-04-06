@@ -6,8 +6,10 @@
 
 body {
     font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: url('http://ironsummitmedia.github.io/startbootstrap-business-casual/img/bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
+/*    background: url('http://ironsummitmedia.github.io/startbootstrap-business-casual/img/bg.jpg') no-repeat center center fixed;
+*/    
+		background-color: #ddd !important;
+		-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;

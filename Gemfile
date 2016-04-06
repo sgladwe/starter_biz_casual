@@ -20,6 +20,9 @@ gem 'devise'
 gem 'devise_invitable'
 gem 'high_voltage'
 gem 'simple_form'
+gem 'carrierwave'
+gem 'mini_magick'
+
 group :development do
   gem 'better_errors'
   gem 'quiet_assets'
